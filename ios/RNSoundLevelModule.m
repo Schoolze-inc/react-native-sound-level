@@ -78,7 +78,6 @@ RCT_EXPORT_METHOD(start:(int)monitorInterval)
   NSError *error = nil;
 
   _recordSession = [AVAudioSession sharedInstance];
-  [_recordSession setCategory:AVAudioSessionCategoryMultiRoute error:nil];
 
   NSURL *_tempFileUrl = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:@"temp"]];
 
